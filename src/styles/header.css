@@ -1,0 +1,44 @@
+#header_container {
+  border: 1px solid white;
+  height: 100vh;
+  position: relative;
+}
+
+#mobile_hero_image {
+  width: 375px;
+}
+
+#icon_hamburguer {
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
+#logo {
+  width: 150px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+#header_title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  border: solid white 1px;
+  position: absolute;
+  padding: 30px;
+  top: 30%;
+  right: 10%;
+}
+
+@media screen and (max-width: 1439px) {
+  #header_container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #header_container {
+    width: 1440px;
+  }
+}
