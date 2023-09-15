@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/header.css';
 
-import mobile_header_hero from '../assets/img/image-hero.jpg';
+import mobile_header_hero from '../assets/img/mobile-image-hero.jpg';
+import desktop_header_hero from '../assets/img/desktop-image-hero.jpg';
 import icon_hamburger from '../assets/icon/icon-hamburger.svg';
 import icon_close from '../assets/icon/icon-close.svg';
 import logo from '../assets/icon/logo.svg';
@@ -13,20 +14,26 @@ const Header = () => {
   const mobileMenuBackground = document.querySelector(
     '#mobile_menu_background'
   );
-  const headerTitle = document.querySelector('#header_title');
+  const mobileHeaderTitle = document.querySelector('#mobile_header_title');
   const mobileNavigationLinks = document.querySelector(
     '#mobile_navigation_links'
   );
 
   const navigationLinksArray = [
-    'ABOUT',
-    'CAREERS',
-    'EVENTS',
-    'PRODUCTS',
-    'SUPPORT',
+    'About',
+    'Careers',
+    'Events',
+    'Products',
+    'Support',
   ];
 
-  const links = navigationLinksArray.map((link, index) => (
+  const mobileLinks = navigationLinksArray.map((link, index) => (
+    <li key={index}>
+      <a>{link.toUpperCase()}</a>
+    </li>
+  ));
+
+  const desktopLinks = navigationLinksArray.map((link, index) => (
     <li key={index}>
       <a>{link}</a>
     </li>
@@ -37,7 +44,7 @@ const Header = () => {
     iconClose.style.display = 'block';
     mobileHeroImage.style.display = 'none';
     mobileMenuBackground.style.display = 'block';
-    headerTitle.style.display = 'none';
+    mobileHeaderTitle.style.display = 'none';
     mobileNavigationLinks.style.display = 'block';
   }
 
@@ -46,13 +53,14 @@ const Header = () => {
     iconClose.style.display = 'none';
     mobileHeroImage.style.display = 'block';
     mobileMenuBackground.style.display = 'none';
-    headerTitle.style.display = 'block';
+    mobileHeaderTitle.style.display = 'block';
     mobileNavigationLinks.style.display = 'none';
   }
 
   return (
     <>
       <div id='header_container'>
+        {/* MOBILE BEGINS */}
         <div id='mobile_menu_background'></div>
         <img
           src={mobile_header_hero}
@@ -72,14 +80,29 @@ const Header = () => {
           alt='icon close'
           onClick={closeMobileMenu}
         />
-        <div id='header_title'>
+        <div id='mobile_header_title'>
           IMMERSIVE
           <br /> EXPERIENCES
           <br /> THAT
           <br /> DELIVER
         </div>
 
-        <ul id='mobile_navigation_links'>{links}</ul>
+        <ul id='mobile_navigation_links'>{mobileLinks}</ul>
+        {/* MOBILE ENDS */}
+        {/* DESKTOP BEGINS */}
+        <img
+          src={desktop_header_hero}
+          id='desktop_hero_image'
+          alt='desktop hero img'
+        />
+        <div id='desktop_header_title'>
+          IMMERSIVE
+          <br /> EXPERIENCES
+          <br /> THAT DELIVER
+        </div>
+        <ul id='desktop_navigation_links'>{desktopLinks}</ul>
+
+        {/* DESKTOP ENDS */}
       </div>
     </>
   );
