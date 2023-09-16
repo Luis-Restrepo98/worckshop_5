@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import '../styles/header.css';
 
 import mobile_header_hero from '../assets/img/mobile-image-hero.jpg';
@@ -8,16 +9,21 @@ import icon_close from '../assets/icon/icon-close.svg';
 import logo from '../assets/icon/logo.svg';
 
 const Header = () => {
-  const iconBurguer = document.querySelector('#icon_hamburguer');
-  const iconClose = document.querySelector('#icon_close');
-  const mobileHeroImage = document.querySelector('#mobile_hero_image');
-  const mobileMenuBackground = document.querySelector(
-    '#mobile_menu_background'
-  );
-  const mobileHeaderTitle = document.querySelector('#mobile_header_title');
-  const mobileNavigationLinks = document.querySelector(
-    '#mobile_navigation_links'
-  );
+  let iconBurguer,
+    iconClose,
+    mobileHeroImage,
+    mobileMenuBackground,
+    mobileHeaderTitle,
+    mobileNavigationLinks;
+
+  useEffect(() => {
+    iconBurguer = document.querySelector('#icon_hamburguer');
+    iconClose = document.querySelector('#icon_close');
+    mobileHeroImage = document.querySelector('#mobile_hero_image');
+    mobileMenuBackground = document.querySelector('#mobile_menu_background');
+    mobileHeaderTitle = document.querySelector('#mobile_header_title');
+    mobileNavigationLinks = document.querySelector('#mobile_navigation_links');
+  }, []);
 
   const navigationLinksArray = [
     'About',
@@ -29,13 +35,17 @@ const Header = () => {
 
   const mobileLinks = navigationLinksArray.map((link, index) => (
     <li key={index}>
-      <a>{link.toUpperCase()}</a>
+      <Link className='react_link' to={link.toLowerCase()}>
+        {link.toUpperCase()}
+      </Link>
     </li>
   ));
 
   const desktopLinks = navigationLinksArray.map((link, index) => (
     <li key={index}>
-      <a>{link}</a>
+      <Link className='react_link' to={link.toLowerCase()}>
+        {link}
+      </Link>
     </li>
   ));
 
