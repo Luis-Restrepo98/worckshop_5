@@ -1,0 +1,58 @@
+.collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+}
+
+.collage_titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-top: 90px;
+}
+
+.collage-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  height: 150px;
+  cursor: pointer;
+}
+.collage-image:hover {
+  opacity: 0.3;
+}
+.collage-image:hover p {
+  color: black;
+}
+
+.image_name {
+  color: white;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-top: 60px;
+  width: 28%;
+  word-break: break-all;
+}
+
+.collage_seeall {
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.collage_seeall:hover {
+  color: white;
+  background-color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
