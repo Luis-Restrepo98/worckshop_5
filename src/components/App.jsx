@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './Header';
 import '../styles/App.css';
+import Collage from "./Collage";
 
 function App() {
   return (
     <>
-    <Header/>
+      <Header />
+      <Collage/>
     </>
   );
 }
