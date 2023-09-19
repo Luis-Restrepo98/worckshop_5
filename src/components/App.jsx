@@ -1,4 +1,21 @@
 import React from 'react';
+import Header from './Header';
+import '../styles/App.css';
+
+function App() {
+  return (
+    <>
+    <Header/>
+    </>
+  );
+}
+
+export default App;
+
+
+
+
+/* import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import About from './About';
@@ -8,7 +25,7 @@ import Products from './Products';
 import Support from './Support';
 import '../styles/App.css';
 
-function AppRoutes() {
+function App() {
   return (
     <Routes>
       <Route index element={<Header />} />
@@ -21,4 +38,4 @@ function AppRoutes() {
   );
 }
 
-export default AppRoutes;
+export default App; */
