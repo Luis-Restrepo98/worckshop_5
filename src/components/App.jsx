@@ -1,6 +1,6 @@
 import React from 'react';
-import Angie from './Angie';
 import Header from './Header';
+import Angie from './Angie';
 import '../styles/App.css';
 import Collage from "./Collage";
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <Angie />
       <Collage/>
+      <Angie/>
     </>
   );
 }
