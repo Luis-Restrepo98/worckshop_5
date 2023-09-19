@@ -1,0 +1,19 @@
+#careers_container {
+  border: 1px solid white;
+  width: 375px;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (max-width: 1439px) {
+  #careers_container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #careers_container {
+    width: 1440px;
+  }
+}

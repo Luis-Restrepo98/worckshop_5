@@ -1,6 +1,7 @@
+/* MOBILE */
+
 #header_container {
-  border: 1px solid white;
-  height: 100vh;
+  width: 375px;
   position: relative;
 }
 
@@ -14,6 +15,21 @@
   right: 25px;
 }
 
+#icon_hamburguer:hover {
+  cursor: pointer;
+}
+
+#icon_close {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
+#icon_close:hover {
+  cursor: pointer;
+}
+
 #logo {
   width: 150px;
   position: absolute;
@@ -21,24 +37,125 @@
   left: 20px;
 }
 
-#header_title {
+#mobile_header_title {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 35px;
   border: solid white 1px;
   position: absolute;
   padding: 30px;
-  top: 30%;
+  top: 35%;
   right: 10%;
+}
+
+#mobile_menu_background {
+  display: none;
+  background-color: black;
+  width: 375px;
+  height: 650px;
+}
+
+#mobile_navigation_links {
+  display: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: -20px;
+  list-style-type: none;
+  margin: 0;
+}
+
+#mobile_navigation_links li {
+  margin-bottom: 20px;
+}
+
+#mobile_navigation_links li Link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.react_link {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 1439px) {
   #header_container {
     width: 375px;
   }
+
+  #desktop_header_title {
+    display: none !important;
+  }
+}
+
+/* DESKTOP */
+
+#desktop_hero_image {
+  display: none;
+  width: 1440px;
+}
+
+#desktop_header_title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+  border: solid white 1px;
+  position: absolute;
+  padding: 40px;
+  padding-right: 100px;
+  padding-left: 30px;
+  top: 35%;
+  left: 12%;
+}
+
+#desktop_navigation_links {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 11%;
+  list-style-type: none;
+  font-family: 'Alata', sans-serif;
+}
+
+#desktop_navigation_links li {
+  display: inline-block;
+  padding-bottom: 14px;
+  margin: 14px;
+}
+
+#desktop_navigation_links li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  border-image: linear-gradient(
+      to right,
+      transparent 30%,
+      white 30%,
+      white 70%,
+      transparent 70%
+    )
+    100% 1;
 }
 
 @media screen and (min-width: 1440px) {
   #header_container {
     width: 1440px;
+  }
+
+  #mobile_hero_image,
+  #icon_hamburguer,
+  #mobile_header_title {
+    display: none !important;
+  }
+
+  #desktop_hero_image,
+  #desktop_navigation_links {
+    display: block;
+  }
+
+  #logo {
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 12%;
   }
 }
