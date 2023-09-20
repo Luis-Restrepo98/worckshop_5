@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <Collage/>
       <Angie/>
+      <Collage/>
     </>
   );
 }

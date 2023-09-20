@@ -28,9 +28,9 @@
     margin-top: 90px;
     @media (min-width:1440px){
         position: absolute;
-        top: 97%;
+        top: 200%;
         left: 0%;
-        margin-left: 160px;
+        margin-left: 140px;
         margin-top: 10px;
     }
 }
@@ -38,7 +38,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    width: 90%;
+    width: 375px;
     height: 150px;
     cursor: pointer;
     &:hover{
@@ -85,10 +85,10 @@
     }
     @media (min-width:1440px){
         position: absolute;
-        top: 97%;
+        top: 200%;
         right: 0%;
         width: 10%;
-        margin-right: 160px;
+        margin-right: 170px;
         margin-top: 5px;
     }
 }

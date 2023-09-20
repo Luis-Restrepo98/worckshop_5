@@ -4,7 +4,7 @@ import "../styles/style.css";
 import img_angie from '../assets/img/image-angie.jpg';
 
 
-const CUERPO = () => {
+const Cuerpo = () => {
     return (
       <>
       <div className='content_principal'>
@@ -26,4 +26,4 @@ const CUERPO = () => {
       </>
     );
   };
-  export default CUERPO;
+  export default Cuerpo;
