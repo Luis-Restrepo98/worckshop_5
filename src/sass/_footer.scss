@@ -9,9 +9,10 @@
 }
 
 .footerContainer{
-    width: 100%;
+    width: 90%;
     height: 8rem;
     margin: 0;
+    margin-left: 3rem;
     padding: 0;
     background-color: black;
     color: white;
@@ -24,11 +25,13 @@
 
 .companyNameContainer{
     padding: 32px 94px;
+    margin-left: -2rem;
 }
 
 .companyName{
     font-weight: 700;
     font-size: 19px;
+    margin-left: -1rem;
 }
 
 
@@ -36,6 +39,7 @@
     display: flex;
     gap: 10px;
     margin-top: 23px;
+    margin-left: -1rem;
 }
 
 .otherInfoContainer{
@@ -46,18 +50,59 @@
     display: flex;
     gap: 0.5rem;
     justify-content: end;
+    /* margin-right: -3.5rem; */
 
 }
 
 .copyrigthContainer{
     margin-top: 27px;
-
-}
-
-@media (max-width: 600px){
-  *{
+    margin-left: 2rem;
+    margin-right: -1rem;
     display: flex;
-    flex-direction: column;
-  }
+    align-items: end;
+
 }
 
+@media (max-width: 750px){
+    .footerContainer{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -1rem;
+
+}
+
+    .companyNameContainer{
+
+        margin-left: -0.5rem;
+        margin-bottom: 1em;
+        
+    }
+    .companyName{
+        font-size: 2rem;
+        margin-left: -3.5rem;
+
+    }
+    .companyInfoContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:1rem;
+        margin-left: 8rem;
+}
+
+    .linksContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .redesContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+}
