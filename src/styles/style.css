@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .collage {
   display: flex;
   justify-content: center;
@@ -98,6 +99,62 @@
     width: 10%;
     margin-right: 160px;
     margin-top: 5px;
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 8rem;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.companyInfoContainer {
+  width: 50%;
+}
+
+.companyNameContainer {
+  padding: 32px 94px;
+}
+
+.companyName {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.otherInfoContainer {
+  padding: 32px 94px;
+}
+
+.redesContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.copyrigthContainer {
+  margin-top: 27px;
+}
+
+@media (max-width: 600px) {
+  * {
+    display: flex;
+    flex-direction: column;
   }
 }
 

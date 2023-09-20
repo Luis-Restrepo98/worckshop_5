@@ -2,12 +2,14 @@ import React from 'react';
 import Header from './Header';
 import '../styles/App.css';
 import Collage from "./Collage";
+import  Footer  from './Footer';
 
 function App() {
   return (
     <>
       <Header />
       <Collage/>
+      <Footer/>
     </>
   );
 }
