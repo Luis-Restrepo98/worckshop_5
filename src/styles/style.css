@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .collage {
   display: flex;
   justify-content: center;
@@ -169,6 +170,257 @@
   margin-left: 70px;
   width: 375px;
   text-align: center;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.footerContainer {
+  width: 1440px;
+  height: 8rem;
+  margin: 0;
+  margin-left: 2rem;
+  margin-top: 150px;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.companyInfoContainer {
+  width: 50%;
+}
+
+.companyNameContainer {
+  padding: 32px 94px;
+  margin-left: 4rem;
+}
+
+.companyName {
+  font-weight: 700;
+  font-size: 19px;
+  margin-left: -1rem;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 23px;
+  margin-left: -1rem;
+}
+.linksContainer div:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.otherInfoContainer {
+  padding: 32px 94px;
+}
+
+.redesContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+.redesContainer div img:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.copyrigthContainer {
+  margin-top: 27px;
+  margin-left: 2rem;
+  margin-right: -1rem;
+  display: flex;
+  align-items: end;
+}
+
+@media (max-width: 750px) {
+  .footerContainer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  .companyNameContainer {
+    margin-left: 2rem;
+    margin-bottom: 1em;
+  }
+  .companyName {
+    font-size: 2rem;
+    margin-left: -3.5rem;
+  }
+  .companyInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-left: 8rem;
+  }
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .redesContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
+/* MOBILE */
+#header_container {
+  width: 450px;
+  position: relative;
+  margin-left: 10px;
+}
+
+#mobile_hero_image {
+  width: 550px;
+}
+
+#icon_hamburguer {
+  position: absolute;
+  top: 45px;
+  right: -95px;
+}
+
+#icon_hamburguer:hover {
+  cursor: pointer;
+}
+
+#icon_close {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
+#icon_close:hover {
+  cursor: pointer;
+}
+
+#logo {
+  width: 150px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+#mobile_header_title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  border: solid white 1px;
+  position: absolute;
+  padding: 30px;
+  top: 35%;
+  right: -10%;
+}
+
+#mobile_menu_background {
+  display: none;
+  background-color: black;
+  width: 375px;
+  height: 650px;
+}
+
+#mobile_navigation_links {
+  display: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: -20px;
+  list-style-type: none;
+  margin: 0;
+}
+
+#mobile_navigation_links li {
+  margin-bottom: 20px;
+}
+
+#mobile_navigation_links li Link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.react_link {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1439px) {
+  #header_container {
+    width: 375px;
+  }
+  #desktop_header_title {
+    display: none !important;
+  }
+}
+/* DESKTOP */
+#desktop_hero_image {
+  display: none;
+  width: 1440px;
+  margin-left: 32px;
+}
+
+#desktop_header_title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  border: solid white 1px;
+  position: absolute;
+  padding: 40px;
+  padding-right: 100px;
+  padding-left: 30px;
+  top: 35%;
+  left: 12%;
+}
+
+#desktop_navigation_links {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 11%;
+  list-style-type: none;
+  font-family: "Alata", sans-serif;
+}
+
+#desktop_navigation_links li {
+  display: inline-block;
+  padding-bottom: 14px;
+  margin: 14px;
+}
+
+#desktop_navigation_links li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  border-image: linear-gradient(to right, transparent 30%, white 30%, white 70%, transparent 70%) 100% 1;
+}
+
+@media screen and (min-width: 1440px) {
+  #header_container {
+    width: 1440px;
+  }
+  #mobile_hero_image,
+  #icon_hamburguer,
+  #mobile_header_title {
+    display: none !important;
+  }
+  #desktop_hero_image,
+  #desktop_navigation_links {
+    display: block;
+  }
+  #logo {
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 12%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

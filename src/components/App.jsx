@@ -3,6 +3,7 @@ import Header from './Header';
 import Angie from './Angie';
 import '../styles/App.css';
 import Collage from "./Collage";
+import  Footer  from './Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Angie/>
       <Collage/>
+      <Footer/>
     </>
   );
 }
